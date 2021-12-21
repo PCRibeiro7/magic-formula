@@ -1,9 +1,6 @@
-const axios = require("axios");
-const puppeteer = require("puppeteer");
 const tabletojson = require("tabletojson").Tabletojson;
 const accounting = require("./accounting");
 var json2xls = require('json2xls');
-const fs = require('fs')
 
 const STOCK_NAME_KEY = "Papel";
 const MINIMUM_STOCK_LIQUIDITY_IN_BRL = 800000;
