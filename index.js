@@ -1,6 +1,6 @@
 const tabletojson = require("tabletojson").Tabletojson;
 const accounting = require("./accounting");
-var json2xls = require('json2xls');
+var json2xls = require('./json2xls');
 
 const STOCK_NAME_KEY = "Papel";
 const MINIMUM_STOCK_LIQUIDITY_IN_BRL = 800000;
@@ -12,12 +12,6 @@ const EV_EBIT_KEY = "EV/EBIT";
 const ROIC_KEY = "ROIC";
 
 var json2xls = require("json2xls");
-var json = {
-  foo: "bar",
-  qux: "moo",
-  poo: 123,
-  stux: new Date(),
-};
 
 const main = async (res) => {
   tabletojson.convertUrl(
