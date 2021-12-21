@@ -73,7 +73,7 @@ const main = async (res) => {
 };
 const express = require('express')
 const app = express()
-const port = proccess.env.PORT || 8000
+const port = process.env.PORT || 8000
 
 app.use(json2xls.middleware);
 
