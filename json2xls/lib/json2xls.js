@@ -91,7 +91,7 @@ transform.middleware = function(req,res,next) {
         var xls = transform(data,config);
         res.setHeader('Content-Type', 'application/vnd.openxmlformats');
         res.setHeader("Content-Disposition", "attachment; filename=" + fn);
-        res.status(200).end(xls, 'binary');
+        res.status(200).send(xls, 'binary');
     };
     next();
 };
